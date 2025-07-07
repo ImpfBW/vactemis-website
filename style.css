@@ -2,27 +2,21 @@
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
-  background: #f8f9fa;
+  background: #f9fbfd;
   color: #333;
-  line-height: 1.6;
 }
 
 header {
-  background-color: #0066cc;
+  background-color: #003366;
   color: white;
-  padding: 1.5rem 2rem;
-}
-
-.nav-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 2rem 1rem;
   text-align: center;
 }
 
 .nav-container h1 {
   margin: 0;
-  font-size: 2rem;
+  font-size: 2.2rem;
+  letter-spacing: 0.5px;
 }
 
 .nav-container .subtitle {
@@ -38,7 +32,7 @@ nav {
 nav a {
   color: white;
   text-decoration: none;
-  margin: 0 1rem;
+  margin: 0 0.8rem;
   font-weight: 500;
 }
 
@@ -47,31 +41,41 @@ nav a:hover {
 }
 
 .hero {
+  padding: 2rem 1rem;
+}
+
+.modern-hero {
+  background: linear-gradient(to right, #e9f3fc, #f0f4f8);
+}
+
+.hero-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  padding: 2rem;
-  background: #e9f3fc;
-  text-align: center;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 500px;
 }
 
 .hero-text h2 {
-  margin-bottom: 1rem;
   font-size: 1.8rem;
-  color: #004a99;
+  color: #003366;
 }
 
 .hero-text p {
-  font-size: 1.1rem;
-  max-width: 600px;
+  font-size: 1rem;
   margin-bottom: 1.5rem;
 }
 
-.hero-image {
-  max-width: 100%;
-  height: auto;
+.hero-content img {
+  max-width: 400px;
   border-radius: 8px;
-  margin-top: 1rem;
 }
 
 .cta-button {
@@ -87,15 +91,43 @@ nav a:hover {
   background-color: #004a99;
 }
 
-.main-content {
-  padding: 2rem;
-  max-width: 900px;
-  margin: auto;
+.section-light, .section-colored {
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+}
+
+.section-light {
+  background-color: #ffffff;
+}
+
+.section-colored {
+  background-color: #e3eefb;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.feature {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
 h3 {
+  color: #003366;
+  margin-bottom: 0.5rem;
+}
+
+h4 {
   color: #004a99;
-  margin-top: 2rem;
+  margin: 0.5rem 0;
 }
 
 footer {
@@ -103,5 +135,4 @@ footer {
   color: white;
   text-align: center;
   padding: 1rem;
-  margin-top: 2rem;
 }
