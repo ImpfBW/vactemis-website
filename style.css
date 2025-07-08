@@ -2,75 +2,91 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
+    padding: 0;
     background: #f6f9fc;
+    color: #1b1b1b;
 }
+
 header {
+    background: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
+
 .logo h1 {
     margin: 0;
-    color: #002b5c;
+    color: #0077cc;
 }
 .logo p {
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: #444;
 }
+
 nav a {
     margin-left: 1.5rem;
+    color: #0077cc;
     text-decoration: none;
-    color: #002b5c;
     font-weight: bold;
 }
+
 .hero {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    background: white;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    background: #ffffff;
 }
-.hero-img {
-    width: 45%;
-    height: auto;
-    border-radius: 0.5rem;
-}
+
 .hero-text {
-    width: 50%;
-    padding-left: 2rem;
+    max-width: 50%;
 }
+
 .hero-text h2 {
-    font-size: 2.5rem;
-    color: #002b5c;
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 1rem;
 }
+
 .hero-text p {
-    margin: 1rem 0;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
 }
-.cta {
-    padding: 0.8rem 1.5rem;
-    background: #002b5c;
+
+.cta-button {
+    background-color: #003366;
     color: white;
+    padding: 0.75rem 1.5rem;
     text-decoration: none;
     border-radius: 5px;
 }
+
+.hero img {
+    max-width: 40%;
+    border-radius: 10px;
+}
+
 .features {
     display: flex;
     justify-content: space-around;
     padding: 2rem;
-    background: #ffffff;
+    background-color: #ffffff;
 }
+
 .feature {
+    max-width: 30%;
     text-align: center;
-    width: 30%;
 }
+
 .feature img {
     width: 100%;
-    border-radius: 0.5rem;
+    border-radius: 8px;
 }
+
 .feature h3 {
-    color: #002b5c;
-    margin: 1rem 0 0.5rem 0;
+    margin-top: 1rem;
+    color: #003366;
 }
