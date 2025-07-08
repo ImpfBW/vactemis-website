@@ -1,1 +1,84 @@
-body{font-family:sans-serif;background:#fff;margin:0;padding:0}header.navbar{position:sticky;top:0;background:#fff;display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;box-shadow:0 2px 4px rgba(0,0,0,0.1);z-index:1000}.logo-block{display:flex;flex-direction:column}.logo{font-size:1.5rem;font-weight:700;color:#0088c3}.subtitle{font-size:0.9rem;color:#444}.nav-links a{margin-left:1.5rem;text-decoration:none;color:#0088c3;font-weight:500}.nav-links a:hover{color:#005e8a}.hero{background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('https://images.pexels.com/photos/40568/medical-appointment-doctor-healthcare-40568.jpeg')center/cover no-repeat;color:#fff;padding:6rem 2rem;text-align:center}.hero h1{font-size:2.5rem;margin-bottom:1rem}.hero p{font-size:1.2rem;max-width:600px;margin:0 auto 2rem}.cta-button{display:inline-block;padding:0.8rem 1.5rem;background:#0088c3;color:#fff;border-radius:4px;text-decoration:none;font-weight:bold}.section{padding:4rem 2rem;max-width:1100px;margin:0 auto}.kacheln{display:flex;flex-wrap:wrap;gap:2rem}.kachel{flex:1 1 calc(33% - 2rem);background:#f5f5f5;padding:2rem;border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,0.05)}.kachel h3{color:#0088c3;margin-bottom:0.5rem}form input,form textarea{width:100%;padding:0.8rem;margin-bottom:1rem;border:1px solid #ccc}form button{background:#0088c3;color:#fff;padding:0.8rem 1.5rem;border:none;cursor:pointer}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #002C4B;
+}
+.logo span {
+    font-size: 0.8rem;
+    display: block;
+    color: #444;
+}
+nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #002C4B;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    background: #f6f9fc;
+}
+.hero-text {
+    flex: 1;
+}
+.hero-text h1 {
+    font-size: 2.5rem;
+    color: #002C4B;
+}
+.hero-text p {
+    font-size: 1.1rem;
+}
+.cta {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background: #004c63;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.hero-img {
+    flex: 1;
+    text-align: right;
+}
+.hero-img img {
+    max-width: 100%;
+    height: auto;
+}
+.usps {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background: #fff;
+}
+.usp {
+    text-align: center;
+    max-width: 300px;
+}
+.usp img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.usp h2 {
+    color: #002C4B;
+    font-size: 1.2rem;
+}
+.usp p {
+    color: #333;
+    font-size: 1rem;
+}
