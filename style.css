@@ -1,84 +1,87 @@
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', sans-serif;
+    background: #fff;
+    color: #333;
 }
-.navbar {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    background: #ffffff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px 40px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
-.logo {
+.logo .highlight {
+    font-size: 24px;
     font-weight: bold;
-    font-size: 1.5rem;
-    color: #002C4B;
+    color: #002b64;
 }
-.logo span {
-    font-size: 0.8rem;
-    display: block;
-    color: #444;
+.logo .subtitle {
+    font-size: 14px;
+    color: #888;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 nav a {
-    margin-left: 1.5rem;
     text-decoration: none;
-    color: #002C4B;
-}
-.hero {
-    display: flex;
-    align-items: center;
-    padding: 2rem;
-    background: #f6f9fc;
-}
-.hero-text {
-    flex: 1;
-}
-.hero-text h1 {
-    font-size: 2.5rem;
-    color: #002C4B;
-}
-.hero-text p {
-    font-size: 1.1rem;
-}
-.cta {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.75rem 1.5rem;
-    background: #004c63;
-    color: #fff;
-    text-decoration: none;
+    color: #002b64;
     font-weight: bold;
 }
-.hero-img {
-    flex: 1;
-    text-align: right;
+.hero {
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 40px;
 }
-.hero-img img {
-    max-width: 100%;
-    height: auto;
+.hero-text {
+    max-width: 600px;
+    background: rgba(255,255,255,0.85);
+    padding: 20px;
+    border-radius: 8px;
+}
+.hero-text h1 {
+    font-size: 36px;
+    color: #002b64;
+}
+.hero-text p {
+    font-size: 18px;
+    margin: 10px 0 20px;
+}
+.cta {
+    padding: 12px 24px;
+    background: #0072ce;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
 }
 .usps {
     display: flex;
     justify-content: space-around;
-    padding: 2rem;
-    background: #fff;
+    padding: 40px;
+    background: #f7f9fc;
 }
 .usp {
     text-align: center;
-    max-width: 300px;
+    width: 30%;
 }
 .usp img {
     width: 100%;
     height: auto;
     border-radius: 8px;
 }
-.usp h2 {
-    color: #002C4B;
-    font-size: 1.2rem;
-}
-.usp p {
-    color: #333;
-    font-size: 1rem;
+.usp h3 {
+    color: #002b64;
 }
