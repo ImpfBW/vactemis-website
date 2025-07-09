@@ -193,7 +193,17 @@ main {
 
 .points-section {
     background-color: #eaf2f8;
-    padding: 40px 20px;
+    padding: 60px 0;
+    width: 100%;
+}
+
+.feature-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+    padding: 0 20px;
 }
 
 .feature-row {
