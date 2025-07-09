@@ -1,223 +1,55 @@
 
 body {
     margin: 0;
-    font-family: 'Inter', Arial, sans-serif;
-    background: #f4f8fc;
-    color: #1a1a1a;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    background: #f2f6fa;
 }
+
 header {
     background-color: white;
-    padding: 16px 32px;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+
 .logo-container {
     display: flex;
     flex-direction: column;
 }
+
 header h1 {
     margin: 0;
     color: #002b5c;
-    font-size: 2em;
-    letter-spacing: 0.5px;
+    font-size: 1.8em;
 }
+
 header .subtitle {
-    font-size: 1em;
-    color: #444;
-    margin-top: -4px;
-}
-nav a {
-    margin-left: 24px;
-    text-decoration: none;
-    color: #002b5c;
-    font-weight: 600;
-    font-size: 0.95em;
-}
-nav a:hover {
-    text-decoration: underline;
-}
-.hero {
-    padding: 60px 32px 40px;
-    max-width: 960px;
-    margin: 0 auto;
-}
-.hero.alt-bg {
-    background: #eaf2fa;
-}
-.hero-text h2 {
-    font-size: 2.4em;
-    color: #002b5c;
-    margin-bottom: 20px;
-    font-weight: 700;
-}
-.hero-text p {
-    font-size: 1.1em;
-    margin-bottom: 16px;
-}
-.cta-button {
-    display: inline-block;
-    margin-top: 24px;
-    padding: 14px 28px;
-    background-color: #002b5c;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: 600;
-    font-size: 1em;
-    transition: background-color 0.2s ease;
-}
-.cta-button:hover {
-    background-color: #004299;
-}
-.features {
-    background-color: #f1f6fb;
-    padding: 60px 20px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.feature {
-    max-width: 300px;
-    margin: 20px;
-    text-align: center;
-    padding: 10px;
-}
-.feature h3 {
-    color: #002b5c;
-    font-size: 1.3em;
-    margin-bottom: 10px;
-    line-height: 1.4;
-}
-.feature p {
-    font-size: 1em;
-    color: #333;
-}
-footer {
-    background-color: #e0e7ef;
-    color: #002b5c;
-    text-align: center;
-    padding: 20px;
     font-size: 0.9em;
+    color: #333;
+    margin-top: -5px;
 }
-footer a {
-    color: #002b5c;
+
+nav a {
+    margin-left: 20px;
     text-decoration: none;
-    margin: 0 8px;
-}
-footer a:hover {
-    text-decoration: underline;
+    color: #002b5c;
+    font-weight: bold;
 }
 
-main {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.card {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-    padding: 24px;
-    margin-bottom: 32px;
-}
-
-.contact-form input,
-.contact-form textarea {
+.full-width {
     width: 100%;
-    max-width: 500px;
-    padding: 10px;
-    margin-top: 4px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-family: inherit;
+    padding: 40px 20px;
+    box-sizing: border-box;
 }
 
-.contact-form button {
-    padding: 10px 20px;
-    background-color: #002b5c;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    background-color: #004299;
-}
-
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav a {
-        display: block;
-        margin: 10px 0 0 0;
-    }
-
-    .hero, .features, .card, main {
-        padding: 20px;
-    }
-
-    .features {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .feature {
-        margin: 10px 0;
-    }
-
-    .cta-button {
-        width: 100%;
-        text-align: center;
-    }
-}
-
-.hero-section {
-    padding: 60px 20px;
-    background-color: #f0f6fc;
+.hero {
+    background-color: #eaf2f9;
     text-align: left;
-    max-width: 900px;
-    margin: auto;
-}
-
-.points-section {
-    background-color: #eaf2f8;
-    padding: 60px 0;
-    width: 100%;
-}
-
-.feature-row {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100%;
-    margin: 0;
-    padding: 0 20px;
-}
-
-.feature-row {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-    flex-wrap: wrap;
-    max-width: 1000px;
-    margin: auto;
-}
-
-.feature {
-    text-align: center;
-    max-width: 300px;
 }
 
 .cta-button {
@@ -228,5 +60,17 @@ main {
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    font-weight: bold;
+}
+
+.features-strip {
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    gap: 20px;
+}
+
+.feature {
+    flex: 1;
+    padding: 20px;
 }
